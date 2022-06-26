@@ -1,0 +1,53 @@
+
+/* Style para formulário*/
+label {
+    font-size: 16;
+    color: rgb(20, 20, 20);
+}
+input {
+    width: 80%;
+    height: 2rem;
+    display: block;
+    margin: 5px;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+button {
+    height: 2rem;
+
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: blue;
+
+}
+
+
+/* Style para Listagem */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#table_persistencia {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    border-bottom: 54px black;
+}
+
+#table_persistencia th, td {
+    padding: 0px 20px;    
+}
+
+#table_persistencia tr{
+    border-bottom: 12px solid black;
+    justify-content: space-around;
+}
+

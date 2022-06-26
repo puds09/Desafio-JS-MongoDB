@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        <%- include('../styles/style.css'); %>
+    </style>
+    <title>Banco de dados</title>
+</head>
+<body>
+
+    <h1>Livros Cadastrados</h1>  
+
+    <table id="table_persistencia">
+        <tr>
+            <th>Nome do Livro</th>
+            <th>Autor do Livro</th>
+            <th>Data de Publicação</th>
+        </tr>
+        <% livros.forEach(livro => { %>
+            <tr class="table_row">
+                <td> <%= livro.nome %> </td>
+                <td> <%= livro.autor %> </td>
+                <td> <%= livro.data.getFullYear() %>-<%= livro.data.getMonth() %>-<%= livro.data.getDate() %>  </td>
+            </tr>
+        <% }); %>
+
+    </table>
+
+</body>
+</html>

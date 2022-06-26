@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../styles/logo300x300_textobranco.ico">
+    <style>
+        <%- include('../styles/style.css'); %>
+    </style>
+    <title>Cadastro Livro</title>
+</head>
+<body>
+
+    <h1>Cadastrar Livros </h1>  
+    <form action="/persistencia"  method="post">
+        <label for="nome">Nome do Livro</label>
+        <input type="text" name="nome">
+        <label for="autor">Autor do Livro</label>
+        <input type="text"name="autor">
+        <label for="data">Data da Publicação</label>
+        <input type="date" name="data">
+        <button>Cadastrar</button>
+
+    </form>
+
+</body>
+</html>
